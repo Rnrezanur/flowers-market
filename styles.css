@@ -1,7 +1,21 @@
-/* global variables */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Remove default browser margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fbfbfa;
+  color: #272727;
+}
+/* A helper class to keep content centered with safe side margins */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
