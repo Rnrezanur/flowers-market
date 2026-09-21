@@ -4,18 +4,145 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: #fbfbfa;
   color: #272727;
 }
+
 /* A helper class to keep content centered with safe side margins */
 .container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* NAVBAR CSS */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Pushes Logo to left, Cart to right */
+  align-items: center;            /* Centers items vertically */
+  height: 80px;
+}
+
+.logo img {
+  height: 38px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;                     /* Spacing between menu items */
+  font-weight: 500;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #E95A5A;                /* Flower accent color */
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid #e5e7eb;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive: Hide menu links on mobile screens */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;               /* Hides links on phones */
+  }
+}
+
+/*  BANNER CSS  */
+.banner-section {
+  padding: 50px 0;
+}
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.banner-text {
+  flex: 1;                       /* Takes equal half space */
+}
+.sub-badge {
+  display: inline-block;
+  background-color: #fee2e2;
+  color: #E95A5A;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 15px;
+}
+.banner-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 46px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.highlight {
+  color: #E95A5A;
+}
+.banner-description {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 480px;
+}
+.primary-btn {
+  display: inline-block;
+  background-color: #E95A5A;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.primary-btn:hover {
+  background-color: #d24848;
+}
+.banner-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+/* Responsive Banner for Mobile */
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column-reverse; /* Put Image on top, Text on bottom */
+    text-align: left;
+    gap: 30px;
+  }
+  .banner-title {
+    font-size: 32px;
+  }
 }

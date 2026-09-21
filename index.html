@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flower Market</title>
+    <title>Funky Flower Shop</title>
 
     <!-- Google Font (Inter for body, Playfair for headings) -->
     <link
@@ -12,37 +12,57 @@
         rel="stylesheet" />
 
     <!-- Link CSS File -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
     <!-- navbar -->
     <header class="header">
         <div class="container navbar">
-            <!-- website logo -->
+            <!-- Website Logo -->
             <a href="#" class="logo">
-                <img src="assets/logo.png" alt="">
+                <img src="assets/logo.png" alt="Flower Market Logo" />
             </a>
             <!-- Navigation Menu (will be hidden on mobile) -->
-             <ul class="nav-manu">
+            <ul class="nav-menu">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#plants">Shop</a></li>
                 <li><a href="#deals">Deals</a></li>
-                <li><a href="#about"> About Us</a></li>
-
-             </ul>
-
-             <!-- cart button on right -->
-              <div class="cart-box">
+                <li><a href="#about">About Us</a></li>
+            </ul>
+            <!-- Cart Button on Right -->
+            <div class="cart-box">
                 <button class="cart-btn">
                     <span>🛒</span>
                     <span>Cart ($0)</span>
                 </button>
-              </div>
+            </div>
         </div>
-
     </header>
 
+    <!-- banner/hero -->
+
+    <section id="home" class="banner-section">
+        <div class="container banner-container">
+            <!-- Left Text Content -->
+            <div class="banner-text">
+                <span class="sub-badge">🌸 Fresh Arrivals Everyday</span>
+                <h1 class="banner-title">
+                    ALWAYS FRESH <br />
+                    <span class="highlight">FLOWERS</span> FOR YOU
+                </h1>
+                <p class="banner-description">
+                    Indulge your senses with nature’s vibrant colors and refreshing aromas. We hand-pick each blossom
+                    directly from our lush gardens.
+                </p>
+                <a href="#plants" class="primary-btn">Shop Now</a>
+            </div>
+            <!-- Right Image -->
+            <div class="banner-image">
+                <img src="assets/hero-flower.png" alt="Fresh Flowers" />
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
