@@ -238,3 +238,54 @@ a {
     height: 120px;
   }
 }
+
+
+/* ================= 4. DEALS CSS ================= */
+.deals-section {
+  padding: 50px 0;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.deal-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #f3f4f6;
+}
+
+.deal-card img {
+  width: 100%;
+  height: auto;
+}
+
+.deal-info {
+  padding: 20px;
+}
+
+.deal-badge {
+  color: #E95A5A;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.deal-info h3 {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.deal-info p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Responsive: 1 card per row on mobile */
+@media (max-width: 768px) {
+  .deals-grid {
+    grid-template-columns: 1fr;
+  }
+}
