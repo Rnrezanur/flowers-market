@@ -188,16 +188,25 @@ a {
 
 .card-img {
   background-color: #f9fafb;
-  border-radius: 10px;
-  padding: 12px;
+  border-radius: 12px;
+  padding: 6px;
   margin-bottom: 12px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .card-img img {
-  height: 160px;
-  object-fit: contain;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.flower-card:hover .card-img img {
+  transform: scale(1.06);
 }
 
 .flower-name {
